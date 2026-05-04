@@ -179,6 +179,9 @@ display: none;
         gap: 20px;
     }
 
+.prey{
+    margin-top: -110%;
+}
     .cry {
         margin-left: 0;
       margin-top: -30px;
@@ -186,6 +189,7 @@ display: none;
     }
 
     .information {
+ margin-top: -10px;
         flex-direction: column;
         gap: 20px;
     
