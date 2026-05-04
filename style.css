@@ -97,11 +97,10 @@ width: 100%;
 
   .classroom{
     background-color: rgb(0, 0, 107);
-    height: 50px;
+    height: 70px;
     display: flex;
     margin-top: 40px;
     padding: 10px;
-    border-radius: 0px 30px 30px 0px;
     width: 60%;
 box-shadow: 0px 4px 1px black;  
 }
@@ -208,16 +207,24 @@ display: none;
     .side2 {
         width: 100%;
     }
-    .classroom {
-        width: 100%;
+    .classroom ul{
+        width: 200%;
+  
         border-radius: 0;
         align-items: center;
         justify-content: center;
     font-size: 20px;
-    display: inline-block;
+   
     }
+    
+.classroom ul{
+    display: inline-block;
+    color: yellow;
+    }
+
 .dent{
     display: block;
+    margin-top: 30px;
 }
 
 .slam{
