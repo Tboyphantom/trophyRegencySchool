@@ -57,14 +57,15 @@ ul li a{
 
 .prey{
     margin-top: -40%;
-   
+   color: rgb(0, 0, 107);
+   text-shadow:2px 2px 4px #ffffff;
 }
 
 .try,.cry{
     font-size: 60px;
  font-family: Engravers MT;
-color: gold;
-text-shadow: 2px 2px 4px #000000;
+   color: rgb(0, 0, 107);
+   text-shadow:2px 2px 1px #ffffff;
 }
 
 .cry{
@@ -189,6 +190,7 @@ display: none;
 .prey{
     margin-top: -110%;
 }
+
     .cry {
         margin-left: 0;
       margin-top: -30px;
