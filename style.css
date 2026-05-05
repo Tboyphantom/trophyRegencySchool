@@ -103,11 +103,19 @@ width: 100%;
     padding: 10px;
     width: 60%;
 box-shadow: 0px 4px 1px black;  
+gap:20px;
 }
+
+.second{
+margin-left: 20px;
+}
+
   .classroom ul{
     display: flex;
+margin-top: 10px;
     gap: 50px;
   }
+
     .classroom ul li{
         list-style: none;
     }
@@ -220,7 +228,8 @@ display: none;
 .classroom ul{
     display: inline-block;
     color: yellow;
-    }
+margin-top: -1px;
+}
 
 .dent{
     display: block;
