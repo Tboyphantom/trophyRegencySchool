@@ -155,9 +155,10 @@ margin-top: 10px;
 .slam{
   width: 400px;
   margin-left: 220px;
-box-shadow: 2px 2px 1px black;
-  
+box-shadow: 2px 2px 1px black; 
+transition: 1s;
 }
+
   @media only screen and (max-width: 1000px) {
  nav{
 width: 100%;
