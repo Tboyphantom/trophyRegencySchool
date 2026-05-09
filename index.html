@@ -14,7 +14,7 @@
             <h1>TRS</h1>
             <ul>
                 <li>
-                    <a href="" >Home</a>
+                    <a href="">Home</a>
                 </li>
                 <li>
                     <a href="#information">About</a>
@@ -34,14 +34,42 @@
                 <li> <a href="">Awards</a>
                 </li>
             </ul>
-            <img src="./menu.png" alt="" id="" class="menu">
+
+            <img src="./menu.png" alt="" id="menu" class="menu" onclick="showPopUp()">
+
+
         </div>
 
+
     </nav>
+    <ul id="let">
+        <li>
+            <a href="" onclick="closePopUp()" id="van">Home</a>
+        </li>
+        <li>
+            <a href="#information" onclick="closePopUp()" id="van">About</a>
+        </li>
+        <li>
+            <a href="#classroom" onclick="closePopUp()" id="van">Classes</a>
+        </li>
+        <li>
+            <a href="" onclick="closePopUp()" id="van">Events</a>
+        </li>
+        <li>
+            <a href="" onclick="closePopUp()" id="van">Contact</a>
+        </li>
+        <li>
+            <a href="" onclick="closePopUp()" id="van">Rules</a>
+        </li>
+        <li> <a href="" onclick="closePopUp()" id="van">Awards</a>
+        </li>
+    </ul>
+
     <br>
     <br>
     <br>
     <!-- image -->
+
     <div class="about">
         <img src="./image.png" alt="" class="pen">
 
@@ -53,12 +81,16 @@
             <p class="cry">Trophy Regency <br>School</p>
         </div>
     </div>
+
     <br>
     <br>
     <br>
+
     <div class="information" id="information">
         <div class="side">
-            <u><h2 class="yes">About Us</h2></u>
+            <u>
+                <h2 class="yes">About Us</h2>
+            </u>
             <br>
             <br>
             <p class="dress">
@@ -80,45 +112,68 @@
                 environment where they can grow and develop into responsible global citizens. At Trophy Regency School,
                 we are committed to nurturing the talents and aspirations of our students and preparing them for a
                 successful future.
-          <br>
-          <br>
-          We are located at No.1 Jesu Oseun Street. For more information about our school,contact us at  
+                <br>
+                <br>
+                We are located at No.1 Jesu Oseun Street. For more information about our school,contact us at
             </p>
         </div>
         <img src="./ChatGPT Image May 2, 2026, 08_59_38 AM.png" alt="" class="side2">
     </div>
-
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.8229192149747!2d3.2560938737308!3d6.668852921459769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9758abf8a8bf%3A0x65d2aee0c4b0d482!2s2%20Engr.%20Odesola%20St%2C%20Alagbado%2C%20Lagos%20102213%2C%20Lagos!5e0!3m2!1sen!2sng!4v1778361580306!5m2!1sen!2sng"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     <!-- class select -->
-<div class="classroom" id="classroom">
-    <ul>
-        <li><h4 id="bless_one">Creche</h4></li>
-<li><h4 id="bless_two">Nursery</h4> </li>
-    </ul>
-    <ul class="second">
-        <li><h4 id="bless_three">Primary</h4> </li>
-<li><h4 id="bless_four">Secondary</h4> </li>
+    <div class="classroom" id="classroom">
+        <ul>
+            <li>
+                <h4 id="bless_one">Creche</h4>
+            </li>
+            <li>
+                <h4 id="bless_two">Nursery</h4>
+            </li>
+        </ul>
+        <ul class="second">
+            <li>
+                <h4 id="bless_three">Primary</h4>
+            </li>
+            <li>
+                <h4 id="bless_four">Secondary</h4>
+            </li>
 
-    </ul>
-</div>
- <br>
- <br>
-<!-- classes -->
-<div class="dent">
-<div class="pride">
-<h1 id="change">Creche</h1>
-<br>
-<br>
-<p id="write">
-The creche class is the foundation level of early childhood education,<br> designed for very young children, usually between the ages of 1½ and 3 years. At this stage,<br> the focus is on creating a safe, warm,and nurturing environment where children <br>feel comfortable and secure away from home.<br>
-<br>
-In the creche class, learning takes place through play, interaction,<br> and exploration. Children are introduced to basic social skills such as sharing, cooperation,<br> and communication. Simple activities like singing, storytelling, coloring, and playing<br> with toys help to develop their motor skills, language, and creativity.<br>
-<br>
-The creche also helps children begin to build independence and confidence while preparing<br> them for higher classes such as nursery and kindergarten.<br><br> Caring teachers provide close attention to each child’s emotional and physical needs,<br> ensuring a smooth transition from home to school life.
-</p>
-</div>
-<img src="./ChatGPT Image May 6, 2026, 01_16_05 PM.png" alt="" class="slam" id="slam">
-</div>
-<script src="./script.js" type="text/javascript"></script>
+        </ul>
+    </div>
+    <br>
+    <br>
+
+    <!-- classes -->
+    <div class="dent">
+        <div class="pride">
+            <h1 id="change">Creche</h1>
+            <br>
+            <br>
+            <p id="write">
+                The creche class is the foundation level of early childhood education,<br> designed for very young
+                children, usually between the ages of 1½ and 3 years. At this stage,<br> the focus is on creating a
+                safe, warm,and nurturing environment where children <br>feel comfortable and secure away from home.<br>
+                <br>
+                In the creche class, learning takes place through play, interaction,<br> and exploration. Children are
+                introduced to basic social skills such as sharing, cooperation,<br> and communication. Simple activities
+                like singing, storytelling, coloring, and playing<br> with toys help to develop their motor skills,
+                language, and creativity.<br>
+                <br>
+                The creche also helps children begin to build independence and confidence while preparing<br> them for
+                higher classes such as nursery and kindergarten.<br><br> Caring teachers provide close attention to each
+                child’s emotional and physical needs,<br> ensuring a smooth transition from home to school life.
+            </p>
+        </div>
+        <img src="./ChatGPT Image May 6, 2026, 01_16_05 PM.png" alt="" class="slam" id="slam">
+    </div>
+    <!-- EVENTS -->
+    <div class="Events">
+
+    </div>
+    <script src="./script.js" type="text/javascript"></script>
 </body>
 
 </html>

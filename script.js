@@ -2,7 +2,8 @@ const blessOne = document.getElementById('bless_one');
 const blesstwo = document.getElementById('bless_two');
 const blessthree = document.getElementById('bless_three');
 const blessfour = document.getElementById('bless_four');
-
+const let = document.getElementById('let');
+const van = document.getElementById('van');
 const write = document.getElementById('write');
 const change = document.getElementById('change');
 const slam = document.getElementById('slam');
@@ -53,6 +54,15 @@ blessfour.addEventListener('click', () => {
         './ChatGPT Image May 6, 2026, 01_35_15 PM.png'
     );
 });
+
+        function showPopup() {
+            document.getElementById("").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("let").style.display = "none";
+        }
+
 
 // Restore saved data when page loads
 window.addEventListener('load', () => {

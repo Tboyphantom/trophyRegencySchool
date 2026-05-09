@@ -22,7 +22,7 @@ display: flex;
 
 nav h1{
 color: whitesmoke;
-font-family:Blackadder ITC ;
+font-family: Blackadder ITC ;
 }
 
 ul{
@@ -39,13 +39,20 @@ ul li a{
     color: white;
     font-size: 15px;
 }
+#let{
+    display: none;
+backgroun-color:rgb(0, 0, 107);
+position: fixed;;
+width:100%;
+}
+
+ #let li{
+    margin-top: 30px;
+    font-size: 30px;
+ }   
 
 .menu{
-  width: 5%;
-  height: 10%;
-  background-color: white;
-  -webkit-background-clip: image;
-  webkit-text-fill-color: transparent;
+display:none;
 }
 
 .pen{
@@ -93,7 +100,6 @@ width: 100%;
 
   .side2{
     width: 600px;
-    box-shadow: 2px 2px 1px black;
   }
 
   .classroom{
@@ -158,19 +164,37 @@ margin-top: 10px;
 box-shadow: 2px 2px 1px black; 
 transition: 1s;
 }
-
+iframe{
+    margin-top:50px;
+    padding:20px;
+    width:100%;
+}
   @media only screen and (max-width: 1000px) {
- nav{
+    nav{
 width: 100%;
  }
 
-    .menu{
+nav ul{
 display: none;
  }
 
-    ul{
-    display:none;
- }   
+    #let{
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 600;
+    margin-left: 170px;
+}
+
+.menu{
+  width: 10%;
+  height: 10%;
+  background-color: white;
+display:flex;
+padding: 10px;
+margin-left: 400px;
+margin-top: -55px;
+}
 
 .pen{
     height: 400px;
@@ -217,6 +241,7 @@ display: none;
 
     .side2 {
         width: 100%;
+        padding: 20px;
     }
 .classroom{
     width: 100%;
@@ -246,6 +271,7 @@ margin-top: -1px;
     width: 100%;
     margin-left: 0;
     margin-top: 40px;
+    padding: 20px;
 }
 }
 
