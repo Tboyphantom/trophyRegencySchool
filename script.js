@@ -55,13 +55,13 @@ blessfour.addEventListener('click', () => {
     );
 });
 
-        function showPopup() {
-            document.getElementById("").style.display = "flex";
-        }
+        // function showPopup() {
+        //     document.getElementById("").style.display = "flex";
+        // }
 
-        function closePopup() {
-            document.getElementById("let").style.display = "none";
-        }
+        // function closePopup() {
+        //     document.getElementById("let").style.display = "none";
+        // }
 
 
 // Restore saved data when page loads
