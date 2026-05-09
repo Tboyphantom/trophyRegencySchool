@@ -1,277 +1,148 @@
 *{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
 }
 
+/* NAV */
 nav{
-    padding: 10px;
-    background-color: rgb(0, 0, 107);
-position: fixed;
-width: 100%;
+    background:#00006b;
+    padding:15px;
+    position:fixed;
+    width:100%;
+    z-index:1000;
 }
 
-.hero{
-display: flex;
-    gap: 30%;
-    margin-top: 10px;
-    display: flex;
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 nav h1{
-color: whitesmoke;
-font-family: Blackadder ITC ;
+    color:white;
 }
 
-ul{
-display: flex;
-    gap: 10%;
+/* DESKTOP MENU */
+.nav-links{
+    display:flex;
+    gap:20px;
 }
 
-ul li{
-    list-style: none;
+.nav-links a{
+    color:white;
+    text-decoration:none;
 }
 
-ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-}
-#let{
-    display: none;
-backgroun-color:rgb(0, 0, 107);
-position: fixed;;
-width:100%;
-}
-
- #let li{
-    margin-top: 30px;
-    font-size: 30px;
- }   
-
+/* MOBILE MENU ICON */
 .menu{
-display:none;
+    display:none;
+    font-size:25px;
+    color:white;
+    cursor:pointer;
 }
 
-.pen{
-    width: 100%;
-    height: 600px;
-    position: relative;
-    z-index: -1;
+/* MOBILE MENU */
+.mobile-menu{
+    display:none;
+    flex-direction:column;
+    background:#00006b;
+    position:absolute;
+    top:60px;
+    left:0;
+    width:100%;
 }
 
-.prey{
-    margin-top: -40%;
-   color: rgb(0, 0, 107);
-   text-shadow:2px 2px 4px #ffffff;
+.mobile-menu a{
+    padding:15px;
+    color:white;
+    border-top:1px solid #222;
+    text-decoration:none;
 }
 
-.try,.cry{
-    font-size: 60px;
- font-family: Engravers MT;
-   color: rgb(0, 0, 107);
-   text-shadow:2px 2px 1px #ffffff;
+.mobile-menu.active{
+    display:flex;
 }
 
-.cry{
-    margin-left:50%;
-font-size: 45px ;
-max-resolution: 300dpi;
-margin-top: 150px;
+/* HERO */
+.hero img{
+    width:100%;
+    height:60vh;
+    object-fit:cover;
 }
 
-.information{
-    margin-top: 130px;
-display: flex;
-    gap: 20%;   
-}
-   
-    .yes{
-         font-size: 40px;
-          margin-left: 40px;
-    }
-
-.dress{
-    margin-left: 60px;
-width: 100%;
+.hero-text{
+    position:absolute;
+    top:40%;
+    left:10%;
+    color:#00006b;
+text-shadow:-2px -2px 1px white;
 }
 
-  .side2{
-    width: 600px;
-  }
-
-  .classroom{
-    background-color: rgb(0, 0, 107);
-    height: 70px;
-    display: flex;
-    margin-top: 40px;
-    padding: 10px;
-    width: 60%;
-box-shadow: 0px 4px 1px black;  
-gap:20px;
+/* SECTIONS */
+section{
+    padding:80px 20px;
 }
 
-.second{
-margin-left: 20px;
+/* FLEX FIX */
+.flex{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
 }
 
-  .classroom ul{
-    display: flex;
-margin-top: 10px;
-    gap: 50px;
-  }
-
-    .classroom ul li{
-        list-style: none;
-    }
-    .classroom ul li h4{
-        cursor: pointer;
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-    }
-
-    .classroom ul li h4:hover{
-        color: gold;
- text-decoration:underline;
-    }
-
-    .dent{
-    width: 100%;
-    height: 400px;
-    display: flex;
-    margin-top: 40px;
-    gap: 70px;
-    }
-
-    .pride{
-        margin-left: 30px;
-    }
-
-    #change{
-        transition: 1s;
-    }
-
-    #write{
-        transition: 1s;
-    }
-
-.slam{
-  width: 400px;
-  margin-left: 220px;
-box-shadow: 2px 2px 1px black; 
-transition: 1s;
+/* IMAGE FIX */
+img{
+    max-width:100%;
 }
+
+/* CLASS MENU */
+.classroom{
+    background:#00006b;
+    padding:15px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.classroom h4{
+    color:white;
+    cursor:pointer;
+}
+
+.classroom h4:hover{
+    color:gold;
+}
+
 iframe{
     margin-top:50px;
     padding:20px;
     width:100%;
 }
-  @media only screen and (max-width: 1000px) {
-    nav{
-width: 100%;
- }
-
-nav ul{
-display: none;
- }
-
-    #let{
-    display: none;
-    margin-top: 20px;
-    padding: 10px;
-    font-weight: 600;
-    margin-left: 170px;
+.place{
+    margin-top:20px;
 }
 
-.menu{
-  width: 10%;
-  height: 10%;
-  background-color: white;
-display:flex;
-padding: 10px;
-margin-left: 300px;
-margin-top: -55px;
-}
+/* RESPONSIVE */
+@media(max-width:768px){
 
-.pen{
-    height: 400px;
-    width: 100%;
-}
-  
-.try{
-    font-size: 30px;
-    margin-top: 500px;
-    margin-left: 50px;
-}
-
-    .hero {
-        flex-direction: column;
-        gap: 20px;
+    .nav-links{
+        display:none;
     }
 
-.prey{
-    margin-top: -110%;
-}
-
-    .cry {
-        margin-left: 0;
-      margin-top: -30px;
-        text-align: center;
+    .menu{
+        display:block;
     }
 
-    .information {
- margin-top: -10px;
-        flex-direction: column;
-        gap: 20px;
-    
+    .hero-text{
+        position:static;
+        text-align:center;
+        padding:20px;
     }
 
-    .yes {
-        margin-left: 0;
-        text-align: center;
+    .flex{
+        flex-direction:column;
     }
-
-    .dress {
-        margin-left: 0;
- padding: 10px;
-    }
-
-    .side2 {
-        width: 100%;
-        padding: 20px;
-    }
-.classroom{
-    width: 100%;
 }
-    .classroom ul{
-        width: 200%;
-  
-        border-radius: 0;
-        align-items: center;
-        justify-content: center;
-    font-size: 20px;
-   
-    }
-    
-.classroom ul{
-    display: inline-block;
-    color: yellow;
-margin-top: -1px;
-}
-
-.dent{
-    display: block;
-    margin-top: 30px;
-}
-
-.slam{
-    width: 100%;
-    margin-left: 0;
-    margin-top: 40px;
-    padding: 20px;
-}
-}
-
