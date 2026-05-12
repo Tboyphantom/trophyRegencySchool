@@ -1,4 +1,4 @@
-*{
+* { 
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -163,6 +163,100 @@ iframe{
     margin-top:20px;
 }
 
+/* SECTION WRAPPER */
+.why-choose {
+    background: #f5f7ff;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* CONTAINER */
+.why-container {
+    max-width: 900px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+.why-container h2 {
+    font-size: 32px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* TEXT */
+.why-container p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    text-align: center;
+}
+
+/* HIGHLIGHT BOXES (optional upgrade feel) */
+.features {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.feature-box {
+    background: #eef2ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    transition: 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    background: #dde6ff;
+}
+
+
+
+/* FOOTER (DESKTOP - unchanged) */
+footer{
+    background:#00006b;
+    color:white;
+    padding:20px;
+    gap: 20px;
+}
+
+footer h3{
+    font-size:15px ;
+}
+.sense{
+    display: flex;
+gap: 800px;
+}
+.gaze{
+    display: flex;
+    gap: 20px;
+}
+
+.end-links ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.end-links a{
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.end-links a:hover{
+    color:gold;
+    transform:translateY(-2px);
+}
+
 /* RESPONSIVE */
 @media(max-width:768px){
 
@@ -183,7 +277,40 @@ iframe{
     .flex{
         flex-direction:column;
     }
+
+    /* FOOTER FIX FOR PHONES (ONLY ADDITIONS) */
+    footer{
+        flex-direction:column;
+        text-align:center;
+    }
+.sense{
+    display: block;
+gap: 0px;
 }
+    .gaze{
+        margin-left:0;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .end-links ul{
+        padding:0;
+    }
+
+}
+
+    .why-container {
+        padding: 25px;
+    }
+
+    .why-container h2 {
+        font-size: 24px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
 
 /* ANIMATIONS */
 @keyframes fadeIn{

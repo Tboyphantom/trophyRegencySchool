@@ -27,8 +27,7 @@ classButtons.forEach(btn => {
         if (type === "Creche") {
             updateClass(
                 'Creche',
-                `The creche class is the foundation level of early childhood education,<br>
-                designed for very young children, usually between the ages of 1½ and 3 years. At this stage,<br>
+                `The creche class is the foundation level of early childhood education. At this stage,<br>
                 the focus is on creating a safe, warm,and nurturing environment where children 
                 feel comfortable and secure away from home.<br><br>
                 In the creche class, learning takes place through play, interaction,
@@ -46,8 +45,7 @@ classButtons.forEach(btn => {
         else if (type === "Nursery") {
             updateClass(
                 'Nursery',
-                `The nursery class is the next level of early childhood education,<br>
-                designed for children between the ages of 3 and 5 years. At this stage,<br>
+                `The nursery class is the next level of early childhood education. At this stage,<br>
                 the focus is on further developing social, emotional, and cognitive skills.<br><br>
                 In the nursery class, learning takes place through structured activities,
                 play, and exploration. Children are introduced to more complex concepts
@@ -63,8 +61,7 @@ classButtons.forEach(btn => {
         else if (type === "Primary") {
             updateClass(
                 'Primary',
-                `The primary class is the foundational level of elementary education,<br>
-                designed for children between the ages of 6 and 10 years. At this stage,<br>
+                `The primary class is the foundational level of elementary education. At this stage,<br>
                 the focus is on building a strong academic base and developing critical thinking skills.<br><br>
                 In the primary class, learning takes place through a variety of subjects,
                 including mathematics, science, language arts, and social studies. Children are encouraged to explore their interests and develop a love for learning.<br><br>
@@ -79,8 +76,7 @@ classButtons.forEach(btn => {
         else if (type === "Secondary") {
             updateClass(
                 'Secondary',
-                `The secondary class is the advanced level of elementary education,<br>
-                designed for children between the ages of 11 and 14 years. At this stage,<br>
+                `The secondary class is the advanced level of elementary education. At this stage,<br>
                 the focus is on preparing students for high school and beyond.<br><br>
                 In the secondary class, learning takes place through specialized subjects,
                 including mathematics, science, language arts, and social studies. Students are encouraged to develop their critical thinking skills and become more independent learners.<br><br>
