@@ -219,7 +219,37 @@ iframe{
     background: #dde6ff;
 }
 
+.events{
+    animation:fadeIn 1s ease;
+    padding: 20px;
+}
+.can{
+    background: #00006b;
+    padding:20px;
+    border-radius:0px;
+    margin-bottom:20px;
+    transition:0.3s ease;
+    color: #ffffff;
+}
+.events h1{
+    text-align:center;
+    margin-bottom:30px;
+    font-size: 25px;
+}
+.event-box{
+    background: #f5f7ff;
+    padding:20px;
+    border-radius:5px;
+    margin-bottom:20px;
+    transition:0.3s ease;
+    color: #000000;
+box-shadow: 2px 4px 1px black;
+}
 
+.event-box:hover{
+    transform:translateY(-5px);
+    background: #e0e4ff;
+}
 
 /* FOOTER (DESKTOP - unchanged) */
 footer{
@@ -256,6 +286,7 @@ gap: 800px;
     color:gold;
     transform:translateY(-2px);
 }
+
 
 /* RESPONSIVE */
 @media(max-width:768px){
