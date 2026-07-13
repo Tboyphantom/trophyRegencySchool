@@ -8,6 +8,13 @@ const image = document.getElementById('image');
 
 const classButtons = document.querySelectorAll('.classroom h4');
 
+const bar = document.getElementById('barslide')
+
+const burn = document.getElementById('burn')
+
+// const thumb = document.getElementById("scrollThumb");
+// const scrollbar = document.querySelector(".scrollbar");
+
 function updateClass(titleText, text, img) {
     title.textContent = titleText;
     content.innerHTML = text;
@@ -131,3 +138,82 @@ window.addEventListener('resize', () => {
         mobileMenu.classList.remove('active');
     }
 });
+
+ bar.addEventListener('click', () => {
+  
+if (onclick + 1) {
+    bar.style.cursor="grab"  
+}
+else{
+
+}
+} )
+   
+const thumb = document.getElementById("scrollThumb");
+const scrollbar = document.querySelector(".scrollbar");
+
+function updateScrollbar(){
+
+    const scrollTop = window.scrollY;
+
+    const documentHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+
+    const trackHeight = scrollbar.clientHeight;
+
+    const thumbHeight = thumb.clientHeight;
+
+    const maxMove = trackHeight - thumbHeight;
+
+    const move = (scrollTop/documentHeight) * maxMove;
+
+    thumb.style.top = move + "px";
+}
+
+let dragging = false;
+
+thumb.addEventListener("mousedown",()=>{
+
+    dragging = true;
+
+    document.body.style.userSelect="none";
+
+});
+
+document.addEventListener("mouseup",()=>{
+
+    dragging = false;
+
+    document.body.style.userSelect="auto";
+
+});
+
+document.addEventListener("mousemove",(e)=>{
+
+    if(!dragging) return;
+
+    const rect = scrollbar.getBoundingClientRect();
+
+    const thumbHeight = thumb.clientHeight;
+
+    let y = e.clientY - rect.top - thumbHeight/2;
+
+    const max = scrollbar.clientHeight - thumbHeight;
+
+    y = Math.max(0,Math.min(max,y));
+
+    thumb.style.top = y + "px";
+
+    const percent = y/max;
+
+    window.scrollTo({
+
+        top:percent*(document.documentElement.scrollHeight-window.innerHeight),
+
+        behavior:"auto"
+
+    });
+
+});
+
+updateScrollbar();

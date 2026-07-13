@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+
+    <script src="https://unpkg.com/html5-qrcode"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #00006b;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 400px;
+            max-width: 95%;
+            background: #ffff;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, .4);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        #reader {
+            width: 100%;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background: black;
+            border-radius: 10px;
+            word-break: break-word;
+            color: #ffff;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 25px;
+            border: none;
+            background: #00006b;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        a {
+            color: #22c55e;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            button {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <div class="container">
+
+        <h1>QR Code Scanner</h1>
+
+        <br>
+        <br>
+        <br>
+
+
+        <div id="reader"></div>
+
+        <div class="result">
+            <strong>Result:</strong>
+            <p id="result">No QR code scanned.</p>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <button onclick="startScanner()">Start Scanner</button>
+        <br>
+        <br>
+        <span style="color:#0000;"><span style="color: red;font-weight: 700;">Note:</span><span
+                style="color: black;">Please allow camera access for the scanner to work.Also make sure that the QR code
+                is clearly visible and within the scan area and the qr code is meant to scan for results.</span></span>
+    </div>
+
+    <script>
+
+        let scanner;
+
+        function startScanner() {
+
+            scanner = new Html5Qrcode("reader");
+
+            scanner.start(
+                {
+                    facingMode: "environment"
+                },
+                {
+                    fps: 10,
+                    qrbox: 250
+                },
+                success,
+                error
+            );
+
+        }
+
+        function success(decodedText) {
+
+            document.getElementById("result").innerHTML =
+                `<a href="${decodedText}" target="_blank">${decodedText}</a>`;
+
+            scanner.stop();
+
+        }
+
+        function error(err) {
+            // Ignore scan errors
+        }
+
+    </script>
+
+</body>
+
+</html>
